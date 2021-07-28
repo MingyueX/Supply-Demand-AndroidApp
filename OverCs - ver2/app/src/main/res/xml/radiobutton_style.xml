@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="radiobutton_style">
+        <item name="android:button">@null</item><!--去除RadioButton默认带的圆点-->
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

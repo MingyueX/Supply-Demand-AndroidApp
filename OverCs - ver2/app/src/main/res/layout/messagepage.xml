@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="bottom"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+        android:text="消息"
+        android:textColor="@color/text_main"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/color_link" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/color_link" />
+
+    <FrameLayout
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"/>
+
+</LinearLayout>

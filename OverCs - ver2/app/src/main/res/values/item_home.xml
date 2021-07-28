@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="item_home">Home</string>
+    <string name="item_star">Star</string>
+    <string name="item_message">Message</string>
+    <string name="item_profile">Profile</string>
+</resources>
