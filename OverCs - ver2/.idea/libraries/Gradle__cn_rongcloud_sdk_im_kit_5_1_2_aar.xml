@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.rongcloud.sdk:im_kit:5.1.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7bfe8507faa8ee713e2b6fad120ddbc5/jetified-im_kit-5.1.2/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7bfe8507faa8ee713e2b6fad120ddbc5/jetified-im_kit-5.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7bfe8507faa8ee713e2b6fad120ddbc5/jetified-im_kit-5.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7bfe8507faa8ee713e2b6fad120ddbc5/jetified-im_kit-5.1.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.rongcloud.sdk/im_kit/5.1.2/b9ec834dbcecfa5980e1b085864d2e7aa4a0f5b5/im_kit-5.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.rongcloud.sdk/im_kit/5.1.2/48e1f66da339864a813501e142d6d5744aed29f1/im_kit-5.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

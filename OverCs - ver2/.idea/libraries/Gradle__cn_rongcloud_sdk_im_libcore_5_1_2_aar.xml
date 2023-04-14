@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.rongcloud.sdk:im_libcore:5.1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b6e658a3ece5e3b198783eb50b17b598/jetified-im_libcore-5.1.2/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b6e658a3ece5e3b198783eb50b17b598/jetified-im_libcore-5.1.2/jars/libs/videocompressor.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b6e658a3ece5e3b198783eb50b17b598/jetified-im_libcore-5.1.2/jars/libs/tools_push_lib-5.1.2.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b6e658a3ece5e3b198783eb50b17b598/jetified-im_libcore-5.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b6e658a3ece5e3b198783eb50b17b598/jetified-im_libcore-5.1.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.rongcloud.sdk/im_libcore/5.1.2/d3721ccdd884664fac6356383985da1bc75cae89/im_libcore-5.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.rongcloud.sdk/im_libcore/5.1.2/a3ea7c162a61469785972a2d96c66d8214ea89b6/im_libcore-5.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -7,7 +7,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,29 +21,18 @@ import com.scwang.smartrefresh.layout.header.ClassicsHeader;
 import com.scwang.smartrefresh.layout.impl.RefreshFooterWrapper;
 import com.scwang.smartrefresh.layout.impl.RefreshHeaderWrapper;
 import com.scwang.smartrefresh.layout.listener.OnRefreshLoadMoreListener;
-import com.squareup.picasso.Picasso;
 import com.zh.testbottonnav.adapter.HomePostAdapter;
-import com.zh.testbottonnav.net.Cars;
-import com.zh.testbottonnav.net.Drive;
 import com.zh.testbottonnav.net.Post;
 import com.zh.testbottonnav.ui.HttpCallback;
 import com.zh.testbottonnav.ui.PostModel;
 
-import org.xutils.common.Callback;
-import org.xutils.http.RequestParams;
-import org.xutils.x;
-
 import java.util.ArrayList;
 import java.util.List;
-
-import jp.wasabeef.picasso.transformations.CropCircleTransformation;
 
 public class HomeFragment extends Fragment {
 
     private int i1;
     private int i2;
-    public Cars dm;
-    public Drive st;
     private List<Post> homePost1 = new ArrayList<>();
     private List<Post> homePost2 = new ArrayList<>();
     private List<Post> displayPost1 = new ArrayList<>();
@@ -184,50 +172,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-
-        /*
-        RequestParams requestParams = new RequestParams("http://apis.juhe.cn/cxdq/brand?first_letter=&key=42b9688d3a998081975c1a824bba5a10");
-        x.http().get(requestParams, new Callback.CommonCallback<String>() {
-            @Override
-            public void onSuccess(String result) {
-                dm = JSON.parseObject(result, Cars.class);
-                if (dm.getErrorCode() == 0) {
-                    for (i1 = 0; i1 < 8; i1++) {
-                        if (i1 >= 60) {
-                            break;
-                        }
-                        List<Cars.ResultBean> resultBean = dm.getResult();
-                        String url = resultBean.get(i1).getBrandLogo();
-                        HomePost mPost = new HomePost(0, resultBean.get(i1).getFirstLetter(), resultBean.get(i1).getBrandName(), url, null);
-                        homePost1.add(mPost);
-                    }
-                    adapter1.addList(homePost1);
-                } else {
-                    Toast.makeText(getActivity(), dm.getReason(), Toast.LENGTH_LONG).show();
-                    for (i1 = 0; i1 < 30; i1++) {
-                        HomePost mPost = new HomePost(1, "No Info", "No Info", "", "REQUEST");
-                        homePost1.add(mPost);
-                    }
-                }
-            }
-
-            @Override
-            public void onError(Throwable ex, boolean isOnCallback) {
-                Log.e("TAG", "请求失败" + ex.getMessage());
-            }
-
-            @Override
-            public void onCancelled(CancelledException cex) {
-
-            }
-
-            @Override
-            public void onFinished() {
-
-            }
-
-         */
-
         postModel.getPost(0, new HttpCallback(){
 
             @Override
@@ -259,57 +203,6 @@ public class HomeFragment extends Fragment {
                 Log.e("TAG", "请求失败" + s);
             }
         });
-
-        /*
-
-        RequestParams requestParams2 = new RequestParams("http://v.juhe.cn/jztk/query?subject=4&model=&testType=&=&key=0b9a3cf411c3c0cadd3be41eb5a29919");
-        x.http().get(requestParams2, new Callback.CommonCallback<String>() {
-            @Override
-            public void onSuccess(String result) {
-                st = JSON.parseObject(result, Drive.class);
-                if (st.getErrorCode() == 0) {
-                    for (i2 = 0; i2 < 8; i2++) {
-                        if (i2 >= 60) {
-                            break;
-                        }
-                        List<Drive.ResultBean> drivebean = st.getResult();
-                        String url = drivebean.get(i2).getUrl();
-                        Fruit mfruit = new Fruit(drivebean.get(i2).getQuestion(), drivebean.get(i2).getExplains(), url);
-                        fruitList2.add(mfruit);
-                    }
-                    adapter2.addList(fruitList2);
-                } else {
-                    Toast.makeText(getActivity(), st.getReason(), Toast.LENGTH_LONG).show();
-                    for (i2 = 0; i2 < 30; i2++) {
-                        Fruit mfruit = new Fruit("No Info", "No Info", "");
-                        fruitList2.add(mfruit);
-                    }
-                }
-            }
-
-            @Override
-            public void onError(Throwable ex, boolean isOnCallback) {
-                Log.e("TAG", "请求失败" + ex.getMessage());
-            }
-
-            @Override
-            public void onCancelled(CancelledException cex) {
-
-            }
-
-            @Override
-            public void onFinished() {
-
-            }
-        });
-
-         */
-
-
-        //initFruits1();
-        //initFruits2();
-
-
 
         refreshLayout.setOnRefreshLoadMoreListener(new OnRefreshLoadMoreListener() {
 

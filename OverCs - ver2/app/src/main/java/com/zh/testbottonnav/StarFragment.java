@@ -7,7 +7,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -17,21 +16,15 @@ import com.alibaba.fastjson.JSON;
 import com.jcodecraeer.xrecyclerview.ProgressStyle;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 import com.zh.testbottonnav.adapter.HomePostAdapter;
-import com.zh.testbottonnav.net.Cars;
 import com.zh.testbottonnav.net.Post;
 import com.zh.testbottonnav.ui.HttpCallback;
 import com.zh.testbottonnav.ui.PostModel;
-
-import org.xutils.common.Callback;
-import org.xutils.http.RequestParams;
-import org.xutils.x;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class StarFragment extends Fragment {
     private int i;
-    public Cars dm;
     private XRecyclerView mRecyclerView;
     private HomePostAdapter adapter;
     private List<Post> postList = new ArrayList<>();
@@ -130,53 +123,6 @@ public class StarFragment extends Fragment {
                 Log.e("TAG", "请求失败" + s);
             }
         });
-
-        /*
-        RequestParams requestParams = new RequestParams("http://apis.juhe.cn/cxdq/brand?first_letter=&key=42b9688d3a998081975c1a824bba5a10");
-        x.http().get(requestParams, new Callback.CommonCallback<String>() {
-            @Override
-            public void onSuccess(String result) {
-                dm = JSON.parseObject(result, Cars.class);
-                if (dm.getErrorCode() == 0) {
-                    for (i = 0; i < 8; i++) {
-                        if (i >= 60) {
-                            break;
-                        }
-                        //List<News.ResultBean.DataBean> dataBean = dm.getResult().getData();
-                        //String url = dataBean.get(i).getThumbnailPicS();
-                        //Fruit mfruit = new Fruit(dataBean.get(i).getTitle(), dataBean.get(i).getAuthorName(), url);
-                        List<Cars.ResultBean> resultBean = dm.getResult();
-                        String url = resultBean.get(i).getBrandLogo();
-                        HomePost mfruit = new HomePost(0, resultBean.get(i).getFirstLetter(), resultBean.get(i).getBrandName(), url, null);
-                        //fruitList.add(mfruit);
-                    }
-                    adapter1.addList(fruitList);
-                } else {
-                    Toast.makeText(getActivity(), dm.getReason(), Toast.LENGTH_LONG).show();
-                    for (i = 0; i < 30; i++) {
-                        HomePost mfruit = new HomePost(0, "No Info", "No Info", "", null);
-                        //fruitList.add(mfruit);
-                    }
-                }
-            }
-            @Override
-            public void onError(Throwable ex, boolean isOnCallback) {
-                Log.e("TAG", "请求失败" + ex.getMessage());
-                //textView.setText("result(failed)--" + ex.getMessage());
-            }
-
-            @Override
-            public void onCancelled(CancelledException cex) {
-
-            }
-
-            @Override
-            public void onFinished() {
-
-            }
-        });
-
-         */
 
         mRecyclerView.setLoadingListener(new XRecyclerView.LoadingListener() {
             @Override

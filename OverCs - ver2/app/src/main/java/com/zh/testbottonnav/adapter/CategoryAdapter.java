@@ -2,10 +2,6 @@ package com.zh.testbottonnav.adapter;
 
 import android.content.Context;
 
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.zh.testbottonnav.net.Category;
-
 import java.util.List;
 
 public class CategoryAdapter extends RadioAdapter<String> {

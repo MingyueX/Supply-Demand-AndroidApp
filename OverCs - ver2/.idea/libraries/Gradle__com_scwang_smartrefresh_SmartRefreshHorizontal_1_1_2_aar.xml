@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.scwang.smartrefresh:SmartRefreshHorizontal:1.1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac0474cc8ea2eadc6112365e43df2181/jetified-SmartRefreshHorizontal-1.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac0474cc8ea2eadc6112365e43df2181/jetified-SmartRefreshHorizontal-1.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac0474cc8ea2eadc6112365e43df2181/jetified-SmartRefreshHorizontal-1.1.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.scwang.smartrefresh/SmartRefreshHorizontal/1.1.2/48bb7cda8cbcb833793c5b09818c12669d303642/SmartRefreshHorizontal-1.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.scwang.smartrefresh/SmartRefreshHorizontal/1.1.2/7f7fbc08b6227d84dc191034ac45127d8da49b12/SmartRefreshHorizontal-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
